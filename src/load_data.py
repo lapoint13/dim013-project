@@ -15,5 +15,17 @@ def load_data(path: str) -> pd.DataFrame:
     return pd.read_csv(path, sep=",", encoding="utf-8-sig")
 
 
+def summarize_data(df: pd.DataFrame) -> None:
+    """Print a summary of a DataFrame.
+
+    Args:
+        df: The DataFrame to summarize.
+    """
+    print(f"Rows: {df.shape[0]}")
+    print(f"Columns: {df.shape[1]}")
+    
+
+
 if __name__ == "__main__":
     print(load_data(sys.argv[1]).head())
+
