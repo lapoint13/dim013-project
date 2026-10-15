@@ -23,9 +23,7 @@ def summarize_data(df: pd.DataFrame) -> None:
     """
     print(f"Rows: {df.shape[0]}")
     print(f"Columns: {df.shape[1]}")
-    
 
 
 if __name__ == "__main__":
     print(load_data(sys.argv[1]).head())
-
